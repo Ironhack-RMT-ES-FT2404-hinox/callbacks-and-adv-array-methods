@@ -101,12 +101,12 @@ let algo = numbersArr.forEach( (eachNumber, index) => {
 
 // para la funcionalidad anterior existe un metodo llamada .map()
 
-let nuevoArr = numbersArr.map((eachNum, index) => {
+let nuevoArr = numbersArr.map((eachNum) => {
   console.log(eachNum)
 
   // el map requiere que devolvamos un valor. Con ese valor se recrea un nuevo array
   let nuevoElemento = eachNum * 1000
-  return `${index}) ${eachNum} $`
+  return nuevoElemento
 })
 
 console.log(nuevoArr)
